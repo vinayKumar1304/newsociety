@@ -1,0 +1,164 @@
+/* 
+    Document   : style
+    Created on : May 5, 2012, 5:55:58 PM
+    Author     : Satish
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/*============  Global CSS  ==================*/
+@font-face {
+    font-family: "Kruti-Dev";
+    src: url("../font/Kruti_Dev.woff");
+}
+*{margin:0; padding:0;}
+body {font-family:'Trebuchet MS', Arial,  Verdana; font-size:14px; color: #484848; background:#c0c0c0; line-height:1.4em;}
+a{text-decoration:none; color:#0a5c16;}
+a:hover{text-decoration:none;}
+a.active{color:#fff;}
+ul{list-style: none;}
+ul li{list-style-type: none;}
+h1{color:#da8209; font-size: 20px;}
+h2{color:#03330a;font-size:18px;}
+h3{color:#eb8800;font-size:18px;}
+h4, h5{color:#484848; font-size:15px;}
+img,input{outline:none;}
+img{border:none;}
+ul,li{margin:0;padding:0;list-style-type:none;}
+em,span,dl,dt,dfn{font-style:normal;}
+
+/*============  Common CSS  ==================*/
+
+
+.m10{padding:10px;}
+.m110{padding-right:10px;}
+.pb{padding-bottom:10px;}
+.pt{padding-top:10px;}
+.ml20{margin-left: 20px;}
+.mr10{margin-right: 10px;}
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.fleft{float:left;}
+.fright{float:right;}
+.fnone{float:none!important;}
+.bdr_all{border:1px solid #d8d8d8;}
+.pt20{padding-bottom:20px;}
+.pl{padding-left:34px;}
+.ti{text-indent:10px;}
+.taline{text-align:justify;}
+.bold{font-weight:bold;}
+
+
+
+
+/*============  Main Container CSS  ==================*/
+
+
+.main_container{width:1000px; margin:0 auto; background: #fff;}
+.header{width:100%; height:165px; background:#f4f5f4;}
+.middle{width:100%;}
+.container{}
+.left_container{width:582px;}
+.right_container{width:373px;}
+.footer{width:100%; height:105px;border-top:4px solid #ef7216;background:url(../images/sprite1.png) repeat-x;margin-top:100px;}
+
+/*============  Banner CSS  ==================*/
+.container .banner{width:100%; height:385px; display:inline-block;}
+.container .banner img{width:584px;height:384px;}
+
+/*============  Container Program Details CSS  ==================*/
+.container .current_program{width:693px;padding:1px;margin-left:10px;float:left;border:1px solid #d8d8d8;}
+.h2{font-weight:bold;background:#e9ece9;padding:4px 0;}
+.h2 span{width:18px;height:18px;float:left;background:url(../images/sprite.png) -1px -61px no-repeat;margin:0 9px 0 5px;}
+.container .program_details{width:auto;padding:30px 20px 20px 10px;}
+.container .program_details .program_content{float:left;}
+.container .program_details .program_content h3{padding:0 0 10px 0;text-align:justify;}
+.container .program_details .program_content p{color:#484848;padding-bottom:10px;}
+.container .program_details .program_content img{padding:0 0 30px 20px;}
+.container .program_details .program_content h5{padding-top:10px;}
+
+.middle_right{float:right;padding-right:10px;}
+.container a{float:right;}
+.container a:hover{text-decoration:underline;}
+.container .program_content ul{padding:0px 10px 10px 5px;}
+.container .program_content ul li{font-size:13px;}
+.container .news_event{width:264px;float:right;border:1px solid #d8d8d8;padding:1px 1px 10px 1px;background:url(../images/event_bg.png) repeat;}
+.container .news_event ul{padding:5px 25px 10px 7px;}
+.container .news_event ul li{padding:5px 0px 10px 25px; background:url(../images/arrow.png) no-repeat left top;font-size:13px;color:#484848;text-align:justify;}
+.triangle{width:0; height:0; border:5px solid; border-color:transparent transparent transparent #0A5C16; float:left; margin-top:5px;}
+.info{padding-bottom:10px;border-bottom:1px solid #D8D8D8;margin-bottom:10px;}
+
+/*============  Right Container CSS  ==================*/
+
+.right_container .container{width:100%; border: 1px solid #dadcda; padding-bottom: 30px;}
+.container h1{background: #e9ece9;padding:10px 0 10px 9px; margin:2px;}
+.right_container .container p{padding: 10px; text-align: justify;}
+
+
+/*============  Start Header CSS  ==================*/
+.header .logo{width:auto;padding-top:10px;}
+.header .logo img{width:340px;height:95px;}
+.header .menubar{width:100%;height:61px;background:url(../images/menubar_bg.png) repeat-x;}
+.header .menubar ul{margin:0 0 0 10px;padding:0;}
+.header .menubar ul li{margin:0;padding:0;color:#03330a;font-weight:bold;font-size:15px;display:inline;}
+.header .menubar ul li a{display:inline-block;}
+.header .menubar ul li a dfn{width:11px;height:56px;float:left;}
+.header .menubar ul li a span{float:left;height:35px;margin-top:1px;text-align:center;padding-top:21px;}
+.header .menubar ul li a em{width:11px;height:56px;float:right;}
+.header .menubar ul li a:hover dfn, 
+.header .menubar ul li a.active dfn{background:url(../images/sprite.png) 0px 0 no-repeat;}
+.header .menubar ul li a:hover span,
+.header .menubar ul li a.active span{background:url(../images/tab_bg.png) repeat-x;color:#fff;}
+.header .menubar ul li a:hover em,
+.header .menubar ul li a.active em{background:url(../images/sprite.png) -14px 0 no-repeat;}
+.donate{float:right;position:relative;width:116px;height:77px;padding:5px 22px;background:url(../images/sprite.png) no-repeat -1px -90px;top:17px;right:33px;}
+.donate a{width:114px;height:50px;float:left;}
+
+
+/*============ Start Contact CSS  ==================*/
+.contact_row{padding:5px 34px;}
+.contact_row a{float:none;}
+.contact_row span{font-weight:bold;color:#484848;padding-right:10px;width:60px;float:left;}
+form label{width:80px;float:left;font-weight:bold;} 
+form textarea{width:70%;height:100px;padding:2px;}
+form input{width:70%;padding:5px 2px;}
+form input:focus{box-shadow:0px 0px 1px blue;}
+form textarea:focus{box-shadow:0px 0px 1px blue;}
+form fieldset{border:none;}
+form fieldset legend{color:#eb8800;font-size:18px;font-weight:bold;}
+
+form input[type="submit"], form input[type="reset"]{width:100px;float:left;height:50px; font-size:16px; }
+.button{margin:0px 0 0 80px;}
+form span{color:#ff0000;}
+
+/*============  End Header CSS  ==================*/
+/*============  Start Footer CSS  ==================*/
+.footer ul{padding:18px 0 18px 0;text-align:center;}
+.footer ul li{margin:0; padding:5px;display:inline;color:#5e615f;font-size:13px;}
+.footer ul li a{color:#5e615f;}
+.footer ul li a:hover{text-decoration:underline;color:#DA8209;}
+.footer p{text-align:center;padding:}
+.footer p span{text-align:center;padding:18px 35px 0;border-top:2px solid #cccccc;font-family:'Arial, Helvetica, sans-serif';font-size:13px;color:#999b9d;}
+
+/*===============Category CSS==================*/
+.container .program_details .program_content .category{}
+.container .program_details .program_content .category .categories{border:5px solid #ef7216;border-radius:5px;float:left;margin:0 25px 15px 0;}
+.container .program_details .program_content .category .categories img{padding:0px;}
+.container .program_details .program_content .category .categories p{font-size:15px;color:#017b13;text-align:center;font-weight:bold;padding:5px 2px 10px 2px;}
+ 
+.llcd-description {
+    font-family: "Kruti-Dev";
+    font-size: 18px;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+
+
+
+

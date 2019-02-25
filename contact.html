@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> Contact Us </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/" type="text/javascript"></script>
+	<script language="javascript" >
+function trim(str)
+{
+return str.replace(/^\s*|\s*$/g,"");
+}
+</script>
+<script type="text/javascript">
+function validationform()
+{
+	if(trim(document.query_form.your_name.value)=="")
+	{
+	alert("Please enter the your name");
+	document.query_form.your_name.focus();
+	return false;
+	}
+	var p= /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+	if(trim(document.query_form.phone.value)=="")
+	{
+	alert("Please enter the phone");
+	document.query_form.phone.focus();
+	return false;
+	}
+	if(p.test(document.query_form.phone.value)!=true) 
+	{ 
+	alert("Please enter the valid phone number.");
+	document.query_form.phone.focus();
+	return false; 
+	}	
+	var rxp =/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})$/;
+	if(trim(document.query_form.email.value)=="")
+	{
+		alert("Please enter email.");
+		document.query_form.email.focus();
+		return false;
+	}
+	if(rxp.test(document.query_form.email.value)!=true) 
+	{ 
+	alert("Please enter the valid email address.");
+	document.query_form.email.focus();
+	return false; 
+	}	 
+  	return true;
+}
+</script>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="header">
+	  	<div class="donate"><a href="donation.html" title="DONATE"></a></div>
+	  	<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title="NEW Society"></a>
+	
+		</div><!--end class logo-->
+		<div class="menubar">
+			 <ul>
+				<li><a href="index.html"><dfn></dfn><span>Home</span><em></em></a></li>
+				<li><a href="about.html"><dfn></dfn><span>About NGO</span><em></em></a></li>
+				<li><a href="mission-vission.html"><dfn></dfn><span>Mission & Vision</span><em></em></a></li>
+				<li><a href="programs.html"><dfn></dfn><span>Programs</span><em></em></a></li>
+				<!--<li><a href="#"><dfn></dfn><span>Area of Operation</span><em></em></a></li>-->
+				<!-- <li><a href="#"><dfn></dfn><span>Area of Operation</span><em></em></a></li> -->
+				<li><a href="donation.html"><dfn></dfn><span>Donation</span><em></em></a></li>
+				<li><a href="galleria.html"><dfn></dfn><span>Galleria</span><em></em></a></li>
+				<li><a href="members.html"><dfn></dfn><span>Members</span><em></em></a></li>
+				<li><a href="contact.html" class="active"><dfn></dfn><span>Contact Us</span><em></em></a></li>
+				<li><a href="llcd.html"><dfn></dfn><span>LLCD</span><em></em></a></li>
+				
+			 </ul>
+		</div><!--end class menubar-->
+		
+	  </div><!--end class Header-->
+	  <div class="middle mt10">
+        
+        <div class="container mt20">
+			<div class="current_program">
+			<h2 class="h2"><span></span>Contact Details</h2>
+			<div class="program_details">
+			<h3>Head Office</h3>
+			<div class="contact_row mt10">
+				<span>Address:</span><em>Near Nootan public school, Raebareli, Uttar Pradesh 229010. </em>
+			</div>
+			<!----<div class="contact_row">
+				<span>Phone:</span><em>+91-011-25690896</em>
+			</div>--->
+			<div class="contact_row">
+				<span>Mobile:</span><em>08765223114</em>
+			</div>
+			<div class="contact_row">
+				<span>Website:</span><a href="http://www.newsociety.in">www.newsociety.in</a>
+			</div>
+			<div class="contact_row">
+				<span>E-mail:</span><a href="mailto:newsociety2012@gmail.com">newsociety2012@gmail.com</a>
+			</div>		  
+			  <!------<h3 class="pt">Branch Office</h3>
+			<div class="contact_row mt10">
+				<span>Address:</span><em>Near Nootan public school, Raebareli, Uttar Pradesh 229010.</em>
+			</div>
+			<div class="contact_row">
+				<span>Phone:</span><em>+91-011-25690896</em>
+			</div>
+			<div class="contact_row">
+				<span>Mobile:</span><em>08765223114</em>
+			</div>
+			<div class="contact_row">
+				<span>Website:</span><a href="http://www.newsociety.in">www.newsociety.in</a>
+			</div>
+			<div class="contact_row">
+				<span>E-mail:</span><a href="mailto:newsociety@gmail.com">newsociety@gmail.com</a>
+			</div>		 -------->
+
+			  <div class="pt">
+			  	<form name="query_form" method="post" action="feedback.php">
+					<fieldset class="pt">
+						<legend>Enquiry Form</legend>
+						<div class="pt20 pt pl"><label>Name:<span>*</span></label><input type="text" name="your_name" /></div>
+						<div class="pt20 pl"><label>Phone No:<span>*</span></label><input type="text" name="phone" /></div>
+						<div class="pt20 pl"><label>E-mail:<span>*</span></label><input type="text" name="email" />	</div>
+						<div class="pt20 pl"><label>Message:<span>*</span></label><textarea rows="" cols="" name="message"></textarea>								</div>
+						<div class="button pl">
+							<input type="submit" value="Submit" class="mr10" onClick="return validationform();" />
+							<input type="reset" value="Reset" />
+						 </div>
+						
+						</fieldset>
+					</fieldset>
+				</form>
+			  </div>
+			<br clear="all"></div><!--Close Program details-->
+			</div><!--Close Current Program-->
+			<div class="middle_right">
+			<div class="news_event">
+				<h2 class="h2"><span></span>News &amp; Events</h2>
+				<ul>
+					<li>This is test news. This is test news.This is test news. This is test news. 
+						This is test news. This is test news. 
+					</li>
+					<li>This is test news. This is test news.This is test news. This is test news. 
+						This is test news. This is test news. 
+					</li>
+					<li>This is test news. This is test news.This is test news. This is test news. 
+						This is test news. This is test news. 
+					</li>
+				</ul>
+				<p><a class="pb pt" href="#">View more...</a></p>
+			</div>
+			</div>
+		<br clear="all">
+		</div>
+      </div>
+      <div class="footer">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="llcd.html">LLCD</a>
+				</li>
+				<li>
+					<a href="about.html">About NGO</a>
+				</li>
+				<li>
+					<a href="mission-vission.html">Mission & Vision</a>
+				</li>
+				<li>
+					<a href="programs.html">Programs</a>
+				</li>
+				<!-- <li>
+					<a href="#">Area of Operation</a>
+				</li> -->
+				<li>
+					<a href="secretary-message.html">Secretary Message</a>
+				</li>
+				<li>
+					<a href="donation.html">Donation</a>
+				</li>
+				<li>
+					<a href="galleria.html">Galleria</a>
+				</li>
+				<li>
+					<a href="members.html">Members</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact Us</a>
+				</li>
+			</ul>
+			<br clear="all">
+			<p>
+				<span>Copyright &copy; 2019 Nutan Education &amp; Welfare Society. All rights reserved.</span>
+			</p>
+		</div><!--Close Fotter-->
+    </div>
+  </body>
+</html>
